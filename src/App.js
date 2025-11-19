@@ -53,10 +53,10 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <button 
-          onClick={handleExchangeRatesClick} 
-          className="refresh-btn"
-        >💰Exchange Rates</button>
+        // <button 
+        //   onClick={handleExchangeRatesClick} 
+        //   className="refresh-btn"
+        // >💰Exchange Rates</button>
         <h1>🌍 World Clocks & Weather</h1>
         <button onClick={fetchCitiesData} className="refresh-btn">
           🔄 Refresh
