@@ -4,7 +4,7 @@ import './App.css';
 import CityCard from './components/CityCard';
 
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5101';
-const EXCHANGE_RATES_URL = process.env.REACT_APP_EXCHANGE_RATES_URL || 'http://localhost:3602';
+// const EXCHANGE_RATES_URL = process.env.REACT_APP_EXCHANGE_RATES_URL || 'http://localhost:3602';
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -44,19 +44,19 @@ function App() {
   }
 
 
-  function handleExchangeRatesClick(e) {
-    e.preventDefault();
+  // function handleExchangeRatesClick(e) {
+  //   e.preventDefault();
 
-    window.location.href = EXCHANGE_RATES_URL;
-  }
+  //   window.location.href = EXCHANGE_RATES_URL;
+  // }
 
   return (
     <div className="app">
       <header className="app-header">
-        <button 
+        {/* <button 
           onClick={handleExchangeRatesClick} 
           className="refresh-btn"
-        >💰Exchange Rates</button>
+        >💰Exchange Rates</button> */}
         <h1>🌍 World Clocks & Weather</h1>
         <button onClick={fetchCitiesData} className="refresh-btn">
           🔄 Refresh
